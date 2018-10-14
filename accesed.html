@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/emojis/381832972954763265.png?v=1">
+    <title>TINAJO CHAN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+
+
+
+
+
+
+<style>
+    div#load_screen {
+        background: #000;
+        opacity: 1;
+        position: fixed;
+        z-index: 10;
+        top: 0px;
+        width: 100%;
+        height: 1600px;
+    }
+
+    div#load_screen>div#loading {
+        color: #FFF;
+        width: 120px;
+        height: 24px;
+        margin: 300px auto;
+    }
+
+</style>
+<script>
+    window.addEventListener("load", function() {
+        var load_screen = document.getElementById("load_screen");
+        document.body.removeChild(load_screen);
+    });
+
+</script>
+
+<body>
+    <div id="load_screen">
+        <div id="loading">
+            <div class="lds-css ng-scope">
+                <center>
+                    <h1 class="saving">Cargando<span>.</span><span>.</span><span>.</span></h1>
+                </center>
+                <div style="width:100%;height:100%" class="lds-pacman">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#"><img src="img/cursor.gif" width="90" height="40"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="https://4ndl861cgz2gvlcn6rov8a-on.drv.tw/">Cerrar Sesion</a></li>
+                    <li class="active"><a href="accesed.html">Zona Miembros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-12 text-center" id=background1>
+                <div class="wrapper w3-animate-zoom">
+                    <div id="cities">
+                        <span class=font1>VIP PLACE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-0 sidenav" id=background1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <canvas id="canvas"></canvas>
+    <div class="container letter">
+        <h2>GALERIA</h2>
+        <button type="button" class="btn btn-info btn-lg hvr-grow-rotate" data-toggle="collapse" data-target="#demo">VIDEOS</button><span></span>
+        <button type="button" class="btn btn-info btn-lg hvr-grow-rotate" data-toggle="collapse" data-target="#demo1">IMAGENES</button>
+        <button type="button" class="btn btn-info btn-lg hvr-grow-rotate" data-toggle="collapse" data-target="#demo2">MUSIC</button>
+        <div id="demo2" class="collapse">
+            <div class="container-fluid text-center">
+                <div class="row content" id=background>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/436052034%3Fsecret_token%3Ds-ePv6q&color=%2300ffb2&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/429940149%3Fsecret_token%3Ds-uxL26&color=%232264d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438348360%3Fsecret_token%3Ds-I06GT&color=%232264d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/438352779%3Fsecret_token%3Ds-HFcbA&color=%232264d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/429715593%3Fsecret_token%3Ds-0H7S2&color=%232264d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432863112%3Fsecret_token%3Ds-X59PU&color=%232264d1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="demo1" class="collapse">
+
+            <body>
+                <center><iframe src="https://albumizr.com/a/fKSN" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe></center>
+            </body>
+        </div>
+        <div id="demo" class="collapse">
+            <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" id=carousel>
+                    <div class="item active">
+                        <!-- Slide 1 -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <center><iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/UpE7pU0-VLU"></iframe></center>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="item">
+                        <div class="container-fluid">
+                            <center><iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/nhoTCDuJEi4"></iframe></center>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="item">
+                        <div class="container-fluid">
+                            <center><iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/c2DUms9rWx0"></iframe></center>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="item">
+                        <center> <iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/QOHgGmT9lYs"></iframe>
+                        </center>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <center> <iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/U2ecVkg0V0E"></iframe></center>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="item">
+                        <div class="container-fluid">
+                            <center> <iframe data-animation="animated bounceInRight" width="420" height="315" src="https://www.youtube.com/embed/iDapgmgzH2s"></iframe>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+            </div>
+            <!-- fin carusel -->
+
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center" style="background-color: black;color: dimgray">
+        <p>TINAJOCHAN.INC *ALL RIGHTS RESERVED*</p>
+    </footer>
+</body>
+<script>
+    (function() {
+        var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+            function(callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+        window.requestAnimationFrame = requestAnimationFrame;
+    })();
+
+
+    var flakes = [],
+        canvas = document.getElementById("canvas"),
+        ctx = canvas.getContext("2d"),
+        flakeCount = 400,
+        mX = -100,
+        mY = -100
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function snow() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (var i = 0; i < flakeCount; i++) {
+            var flake = flakes[i],
+                x = mX,
+                y = mY,
+                minDist = 150,
+                x2 = flake.x,
+                y2 = flake.y;
+
+            var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                dx = x2 - x,
+                dy = y2 - y;
+
+            if (dist < minDist) {
+                var force = minDist / (dist * dist),
+                    xcomp = (x - x2) / dist,
+                    ycomp = (y - y2) / dist,
+                    deltaV = force / 2;
+
+                flake.velX -= deltaV * xcomp;
+                flake.velY -= deltaV * ycomp;
+
+            } else {
+                flake.velX *= .98;
+                if (flake.velY <= flake.speed) {
+                    flake.velY = flake.speed
+                }
+                flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+            }
+
+            ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+            flake.y += flake.velY;
+            flake.x += flake.velX;
+
+            if (flake.y >= canvas.height || flake.y <= 0) {
+                reset(flake);
+            }
+
+
+            if (flake.x >= canvas.width || flake.x <= 0) {
+                reset(flake);
+            }
+
+            ctx.beginPath();
+            ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+        requestAnimationFrame(snow);
+    };
+
+    function reset(flake) {
+        flake.x = Math.floor(Math.random() * canvas.width);
+        flake.y = 0;
+        flake.size = (Math.random() * 3) + 2;
+        flake.speed = (Math.random() * 1) + 0.5;
+        flake.velY = flake.speed;
+        flake.velX = 0;
+        flake.opacity = (Math.random() * 0.5) + 0.3;
+    }
+
+    function init() {
+        for (var i = 0; i < flakeCount; i++) {
+            var x = Math.floor(Math.random() * canvas.width),
+                y = Math.floor(Math.random() * canvas.height),
+                size = (Math.random() * 3) + 2,
+                speed = (Math.random() * 1) + 0.5,
+                opacity = (Math.random() * 0.5) + 0.3;
+
+            flakes.push({
+                speed: speed,
+                velY: speed,
+                velX: 0,
+                x: x,
+                y: y,
+                size: size,
+                stepSize: (Math.random()) / 30,
+                step: 0,
+                opacity: opacity
+            });
+        }
+
+        snow();
+    };
+
+    canvas.addEventListener("mousemove", function(e) {
+        mX = e.clientX,
+            mY = e.clientY
+    });
+
+    window.addEventListener("resize", function() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    })
+
+    init();
+
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5ae9eb53227d3d7edc24e605/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+
+</script>
+<!--End of Tawk.to Script-->
+<script>
+    (function($) {
+        //Animaciones carousel
+        function doAnimations(elems) {
+
+            var animEndEv = "webkitAnimationEnd animationend";
+
+            elems.each(function() {
+                var $this = $(this),
+                    $animationType = $this.data("animation");
+                $this.addClass($animationType).one(animEndEv, function() {
+                    $this.removeClass($animationType);
+                });
+            });
+        }
+
+
+        var $myCarousel = $("#myCarousel"),
+            $firstAnimatingElems = $myCarousel
+            .find(".carousel-item:first")
+            .find("[data-animation ^= 'animated']");
+
+
+        $myCarousel.carousel();
+
+
+        doAnimations($firstAnimatingElems);
+
+
+        $myCarousel.on("slide.bs.carousel", function(e) {
+            var $animatingElems = $(e.relatedTarget).find(
+                "[data-animation ^= 'animated']"
+            );
+            doAnimations($animatingElems);
+        });
+    })(jQuery);
+    //Animaciones hover
+    $(document).ready(function() {
+        $(".text").on('mouseover', function() {
+            $(this).addClass('animated jello');
+        });
+        $(".text").on('mouseout', function() {
+            $(this).removeClass('animated jello');
+        });
+    });
+
+</script>
+
+</html>
